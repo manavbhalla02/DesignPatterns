@@ -22,7 +22,7 @@ public class PlayTicTacToe {
     public void play() {
         while (true) {
             Player player = players.poll();
-            System.out.println(player.getPlayerName() + " Turn");
+            System.out.println(player.getPlayerName() + "'s Turn");
             this.board.display();
             Move move = player.createMove();
             Symbol symbol = player.getSymbol();
